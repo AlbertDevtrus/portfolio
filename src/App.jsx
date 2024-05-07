@@ -1,7 +1,12 @@
-import { ArrowIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "./components/Icons"
+import useSmoothScroll from "./hooks/useSmoothScroll"
+
+import About from "./components/About"
 import NavBar from "./components/NavBar"
+import { ArrowIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "./components/Icons"
 
 function App() {
+
+  useSmoothScroll();
 
   return (
     <main>
@@ -17,19 +22,20 @@ function App() {
         </div>
         <div className="icons">
           <a href="#">
-            <LinkedinIcon />
+            <LinkedinIcon speed={0.1} />
           </a>
           <a href="#">
-            <GithubIcon />
+            <GithubIcon speed={0.04} />
           </a>
           <a href="#">
-            <TwitterIcon />
+            <TwitterIcon speed={0.07} />
           </a>
         </div>
-        <div className="arrow" >
+        <div className="arrow" data-scroll data-scroll-speed={-0.1} >
           <ArrowIcon />
         </div>
       </section>
+      <About />
     </main>
   )
 }

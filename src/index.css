@@ -39,6 +39,15 @@ main {
   display: flex;
   align-items: center;
   gap: 30px;
+
+  a {
+    transition: all 0.1s ease-in-out;
+  }
+
+  a:hover {
+    translate: -1px -1px;
+    filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.5));
+  }
 }
 
 .arrow {
@@ -63,5 +72,47 @@ main {
   to {
     opacity: 1;
     top: 0;
+  }
+}
+
+.about {
+  height: 300vh;
+  padding-top: 50px;
+  position: relative;
+
+  .left {
+    position: sticky;
+    top: 25vh;
+    left: 0;
+  }
+
+  .title {
+    font-weight: 200;
+    font-family: 'Raleway';
+    font-size: 2em;
+    letter-spacing: 0.3rem;
+  }
+
+  .text {
+    padding: 2em;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+
+    p {
+      font-weight: 400;
+      text-wrap: pretty;
+      display: flex;
+      flex-wrap: wrap;
+
+      .word {
+        margin-right: 9px;
+        margin-top: 0px;
+      }
+    }
   }
 }

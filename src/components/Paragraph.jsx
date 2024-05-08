@@ -28,9 +28,21 @@ function Paragraph({ value, element }) {
 function Word({children, range, progress}) {
 
     const opacity = useTransform(progress, range, [0.2, 1]);
+    const condition = children[children.length - 1] === '.';
 
     return ( 
-        <motion.span style={{opacity}} className="word">{children}</motion.span>
+        <>
+            <motion.span 
+                style={{
+                    opacity, 
+                    marginBottom: condition ? '20px' : '0px',
+                }} 
+                className="word"
+            >
+                {children}
+            </motion.span>
+            {condition ? <span style={{width: '100%'}} /> : ''}
+        </>
     );
 }
 

@@ -1,4 +1,8 @@
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
+import { Canvas } from '@react-three/fiber';
+import { Environment, OrbitControls } from '@react-three/drei';
+
+import Cube from '../../public/Cube'
 import Paragraph from "./Paragraph";
 
 function About() {
@@ -13,6 +17,16 @@ function About() {
                 <h2 className="title">/ABOUT</h2>
                 <div className="text">
                     <Paragraph value={paragraph} element={element} />
+                </div>
+                <div className="right">
+                    <Canvas>
+                        <ambientLight />
+                        <OrbitControls enableZoom={false} enablePan={false} />
+                        <Suspense fallback={null}>
+                            <Cube />
+                        </Suspense>
+                        <Environment preset='park' />
+                    </Canvas>
                 </div>
             </div>
         </section>

@@ -128,6 +128,16 @@ main {
     top: -20vh;
     height: 100vh;
     right: 0;
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    svg {
+      width: 40%;
+      height: 100vh;
+    }
   }
 }
 
@@ -139,7 +149,7 @@ canvas {
 .draw {
   position: absolute;
   right: 10vh;
-  top: 25vh;
+  top: 24vh;
 }
 
 .path {

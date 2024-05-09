@@ -3,6 +3,7 @@ import useSmoothScroll from "./hooks/useSmoothScroll"
 import About from "./components/About"
 import NavBar from "./components/NavBar"
 import { ArrowIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "./components/Icons"
+import Draw from "./components/Draw";
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
         <div className="arrow" data-scroll data-scroll-speed={-0.1} >
           <ArrowIcon />
         </div>
+      </section>
+      <section className="draw">
+        <Draw />
       </section>
       <About />
     </main>

@@ -37,7 +37,7 @@ export function ArrowIcon() {
 
 export function LogoIcon() {
     return (
-        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="-1" x2="23.1214" y2="-1" transform="matrix(-0.00687885 0.999976 -0.99998 -0.00633344 0.159058 16.416)" stroke="black" strokeWidth="2"/>
             <line x1="0.240967" y1="39" x2="24.3374" y2="39" stroke="black" strokeWidth="2"/>
             <line y1="-1" x2="23.1214" y2="-1" transform="matrix(0.00398325 -0.999992 0.999993 0.00366726 39.9079 23.1216)" stroke="black" strokeWidth="2"/>

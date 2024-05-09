@@ -21,6 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
 
   .title {
     font-family: 'Raleway';
@@ -47,6 +48,11 @@ main {
   a:hover {
     translate: -1px -1px;
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.5));
+  }
+
+  a:active {
+    translate: 0px 0px;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
   }
 }
 
@@ -130,3 +136,20 @@ canvas {
   width: 100%;
 }
 
+.draw {
+  position: absolute;
+  right: 10vh;
+  top: 25vh;
+}
+
+.path {
+  stroke-dasharray: var(--PATH_LENGTH);
+  stroke-dashoffset: var(--PATH_LENGTH);
+  animation: dash 2500ms linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

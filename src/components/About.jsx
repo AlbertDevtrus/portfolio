@@ -19,14 +19,14 @@ function About() {
                     <Paragraph value={paragraph} element={element} />
                 </div>
                 <div className="right">
-                    <Canvas>
+                    {/* <Canvas>
                         <ambientLight />
                         <OrbitControls enableZoom={false} enablePan={false} />
                         <Suspense fallback={null}>
                             <Cube />
                         </Suspense>
                         <Environment preset='park' />
-                    </Canvas>
+                    </Canvas> */}
                 </div>
             </div>
         </section>

@@ -26,11 +26,11 @@ export function TwitterIcon({speed}) {
     )
 }
 
-export function ArrowIcon() {
+export function ArrowIcon({ color='black', size='30' }) {
     return (
-        <svg width="30" height="30" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.866025" y1="0.902344" x2="19.866" y2="33.8113" stroke="black" strokeWidth="2"/>
-            <line x1="38.8618" y1="1.5" x2="19.8618" y2="34.409" stroke="black" strokeWidth="2"/>
+        <svg width={size} height={size} viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.866025" y1="0.902344" x2="19.866" y2="33.8113" stroke={color} strokeWidth="2"/>
+            <line x1="38.8618" y1="1.5" x2="19.8618" y2="34.409" stroke={color} strokeWidth="2"/>
         </svg>
     )
 }

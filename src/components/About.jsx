@@ -20,6 +20,8 @@ function About() {
         const isWebGL2 = gl && typeof gl.getParameter === 'function' && gl.getParameter(gl.VERSION).includes('WebGL 2.0');
         setIsWebGL2Supported(isWebGL2);
 
+        console.log(gl.VERSION)
+
         console.log(gl.getParameter(gl.VERSION));
     }, []);
 
@@ -33,7 +35,6 @@ function About() {
                     <Paragraph value={paragraph} element={element} />
                 </div>
                 <div className="right">
-                    {isWebGL2Supported ? (
                         <Canvas>
                             <ambientLight />
                             <OrbitControls enableZoom={false} enablePan={false} />
@@ -41,12 +42,7 @@ function About() {
                                 <Cube />
                             </Suspense>
                             <Environment preset='park' />
-                        </Canvas>
-                    ) : (
-                        <div>
-                            <LogoIcon />
-                        </div>
-                    )}
+                        </Canvas>                    
                 </div>
             </div>
         </section>

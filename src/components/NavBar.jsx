@@ -5,7 +5,7 @@ function NavBar() {
 
     return ( 
         <nav className="navbar">
-            <a className="link" data-scroll-to href=".section-projects" data-scroll-to-duration={3} >
+            <a className="link" data-scroll-to href=".section-folders" data-scroll-to-duration={3} data-scroll-to-offset={100} >
                 <span>Work</span>
             </a>
             <a id="home-link" data-scroll-to href="main" data-scroll-to-duration={3} >

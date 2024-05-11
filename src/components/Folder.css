@@ -75,16 +75,20 @@
 
     .technologies {
         display: flex;
+        flex-wrap: wrap;
     }
 
     small {
-        font-size: 0.4em;
+        font-size: 0.35em;
+        font-weight: 500;
         border: 2px solid rgba(0, 0, 0, 0.5);
-        padding: 2px 8px;
+        padding: 4px 8px;
         border-radius: 20px;
-        color: black;
+        color: white;
         user-select: none;
         margin-left: 20px;
+        margin-bottom: 10px;
+        background-color: black;
     }
 }
 
@@ -98,7 +102,7 @@
 
     p {
         text-wrap: pretty;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-family: 'Montserrat';
     }
 

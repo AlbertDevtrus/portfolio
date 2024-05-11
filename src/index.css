@@ -353,17 +353,17 @@ canvas {
 }
 
 .section-projects {
-  height: 150vh;
+  height: 120vh;
   position: relative;
   z-index: 1;
 }
 
 .section-folders {
     position: sticky;
-    top: 10vh;
+    top: -10vh;
     margin: 0;
     background-color: var(--bg-color);
-    height: 90vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -381,6 +381,7 @@ canvas {
   height: 100px;
   position: relative;
   bottom: 100px;
+  z-index: -100;
 }
 
 .cover-folders {
@@ -393,6 +394,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 
   h1 {
     font-size: 2em;
@@ -401,4 +403,17 @@ canvas {
     font-weight: 300;
     letter-spacing: 0.2em;
   }
+}
+
+.line-projects {
+  position: absolute;
+  top: -120px;
+  left: 250px;
+
+}
+
+.animate-path {
+  stroke-dasharray: var(--LINE_PATH_LENGTH);
+  stroke-dashoffset: var(--LINE_PATH_LENGTH);
+  animation: dash 3000ms linear forwards;
 }

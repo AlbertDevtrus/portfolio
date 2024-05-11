@@ -8,7 +8,7 @@ import { ArrowIcon2 } from './Icons';
 const projects = {
     spaceXClone: {
         name: 'SpaceX Clone',
-        num: '001',
+        num: 2,
         technologies: [
             'Astro', 
             'Tailwind',
@@ -21,18 +21,65 @@ const projects = {
         ] 
         ,
         url: 'https://space-x-clone-psi.vercel.app/'
-    }
+    },
+    pomodoro: {
+        name: 'Pomodoro AI',
+        num: 1,
+        technologies: [
+            'JavaScript', 
+            'CSS',
+            'HTML',
+            'NodeJS',
+            'ExpressJS',
+            'OpenAI API'
+        ],
+        image: '/public/projects-img/pomodoro.jpeg',
+        description: [
+            "My portfolio project is a minimalist Pomodoro Timer, developed entirely with Vanilla JavaScript, HTML, and CSS.", 
+            "It stands out for its integration with artificial intelligence through the OpenAI API, which provides personalized advice to help users achieve their goals during work sessions.",  
+            "Additionally, it utilizes localStorage to keep track of users' progress, offering a simple yet effective solution for enhancing personal productivity."
+        ] 
+        ,
+        url: 'https://pomodoro-timer-minimalist.vercel.app/'
+    },
+    zhumell: {
+        name: 'E-commerce',
+        num: 3,
+        technologies: [
+            'React',
+            'Tailwind', 
+            'React-Router',
+            'NodeJS',
+            'ExpressJS',
+            'MongoDB',
+            'Stripe'
+        ],
+        image: '/public/projects-img/zhumell.jpeg',
+        description: [
+            "My project represents a significant advancement in my career, where I combined my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe.", 
+            "It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage.", 
+            "Additionally, it includes user authentication. This project not only showcases my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs."
+        ] 
+        ,
+        url: 'https://zhummellclone.vercel.app/'
+    },
 }
 
-export const Folder = ({name}) => {
+// My project represents a significant advancement in my career, where I combined my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe. It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage. Additionally, it includes user authentication. This project not only showcases my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs.
+
+export const Folder = ({name, isInView}) => {
     const controls = useDragControls();
     const [folder, animate] = useAnimate();
 
-    const handleDrag = (event, info) => {
+    if(isInView) {
+        animate(folder.current, {y: [0, -30, 0]}, { duration: 0.6, delay: (projects[name].num * 0.2) })    
+    }
+
+    const handleDrag = (_, info) => {
         if(info.offset.y > -100) {
-            animate(document.querySelector('.folder'), {y: 0})
+            animate(folder.current, {y: 0})
         } else {
-            animate(document.querySelector('.folder'), {y: -400})
+            animate(folder.current, {y: -440})
         } 
     }
 
@@ -42,14 +89,21 @@ export const Folder = ({name}) => {
             drag={'y'}
             dragControls={controls}
             dragListener={false}
-            dragConstraints={{bottom: 0, top: -400}}
+            dragConstraints={{bottom: 0, top: -440}}
             dragElastic={0.1}
             onDragEnd={handleDrag}
             ref={folder}
+            style={{
+                translate: `0px -${40 * (projects[name].num - 1)}px`,
+                zIndex: `-${projects[name].num}`
+            }}
         >
             <div 
                 className='top-folder'
                 onPointerDown={e => controls.start(e)}
+                style={{
+                    translate: `${100 * (projects[name].num - 1)}px 0px`
+                }}
             >
                 <img
                     src={topFolder} 
@@ -57,7 +111,7 @@ export const Folder = ({name}) => {
                     alt="React logo"
                 />
                 <span className='folder-num'>
-                    {projects[name].num}
+                    00{projects[name].num}
                 </span>
                 <span className='folder-name'>
                     {projects[name].name}

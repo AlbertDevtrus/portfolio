@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ArrowIcon, ArrowIcon2, GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Footer() {
 
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
 
+    const container = useRef(null)
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ['start end', 'end end']
+    })
+
+    const y = useTransform(scrollYProgress, [0, 1], [-1000, 0]);
+    
+
+
     return ( 
-        <footer className="footer" id="contact">
+        <motion.footer className="footer" id="contact" style={{ y }}>
             <div className="text">
                 <h1>
                     /LET'S WORK TOGETHER
@@ -45,7 +56,7 @@ function Footer() {
                 </a>
             </div>
             
-        </footer>
+        </motion.footer>
      );
 }
 

@@ -44,14 +44,15 @@ export function ArrowIcon2({color='white', size = 20}) {
 }
 
 export function LogoIcon() {
-    return (
-        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="-1" x2="23.1214" y2="-1" transform="matrix(-0.00687885 0.999976 -0.99998 -0.00633344 0.159058 16.416)" stroke="black" strokeWidth="2"/>
-            <line x1="0.240967" y1="39" x2="24.3374" y2="39" stroke="black" strokeWidth="2"/>
-            <line y1="-1" x2="23.1214" y2="-1" transform="matrix(0.00398325 -0.999992 0.999993 0.00366726 39.9079 23.1216)" stroke="black" strokeWidth="2"/>
-            <line y1="-1" x2="24.0964" y2="-1" transform="matrix(-0.999996 0.00266613 -0.00289573 -0.999996 40 0)" stroke="black" strokeWidth="2"/>
-            <path d="M7.71088 7.39893H32.2892V32.6012H7.71088V7.39893Z" fill="black"/>
-        </svg>
 
+    return (
+
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="17.3411" y2="-0.5" transform="matrix(-0.00687885 0.999976 -0.99998 -0.00633344 0.119385 12.312)" stroke="black"/>
+            <line x1="0.180664" y1="29.5" x2="18.253" y2="29.5" stroke="black"/>
+            <line y1="-0.5" x2="17.3411" y2="-0.5" transform="matrix(0.00398319 -0.999992 0.999993 0.00366731 29.9309 17.3413)" stroke="black"/>
+            <line y1="-0.5" x2="18.0723" y2="-0.5" transform="matrix(-0.999996 0.00266613 -0.00289573 -0.999996 30 0)" stroke="black"/>
+            <path d="M5.7832 5.54932H24.217V24.451H5.7832V5.54932Z" fill="black"/>
+        </svg>
     )
 }

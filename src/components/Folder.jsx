@@ -100,7 +100,7 @@ export const Folder = ({name, isInView}) => {
                 className='top-folder'
                 onPointerDown={e => controls.start(e)}
                 style={{
-                    translate: `${100 * (projects[name].num - 1)}px 0px`
+                    translate: `${40 * (projects[name].num - 1)}px 0px`
                 }}
             >
                 <img

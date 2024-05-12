@@ -17,7 +17,7 @@ function App() {
   const home = useRef(null);
   const contact = useRef(null);
   const inView = useInView(home);
-  const inViewContact = useInView(contact, { margin: "0% 0% -80% 0%" })
+  const inViewContact = useInView(contact, { margin: "0% 0% -50% 0%" })
 
   return (
     <>

@@ -255,6 +255,18 @@ canvas {
     gap: 20px;
     position: relative;
 
+    .icons-in-form {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      gap: 20px;
+      
+      a {
+        position: relative;
+      }
+    }
+
     p {
       color: white;
       font-family: 'Raleway';
@@ -321,7 +333,6 @@ canvas {
         svg {
           rotate: -90deg;
         }
-
       }
 
       button:hover {
@@ -426,6 +437,7 @@ canvas {
   width: 180px;
   top: 3em;
   left: 43%;
+  opacity: 0.8;
 
   a {
     background-color: white;
@@ -436,14 +448,14 @@ canvas {
   }
   
   .link.work {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 0;
     border-radius: 5px 0px 0px 5px;
     transform-origin: right;
   }
 
   .link.contact {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 0;
     border-radius: 0px 5px 5px 0px;
     transform-origin: left;
@@ -456,12 +468,12 @@ canvas {
   }
 
   .link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 235, 235);
   }
 
   #home-link {
     z-index: 1;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     transform-origin: top;
   }
 
@@ -475,5 +487,227 @@ canvas {
 
   svg:active line {
     stroke-width: 0;
+  }
+}
+
+.navbar-responsive:hover {
+  opacity: 1;
+}
+
+/*
+
+==========================================================================
+
+Responsive
+
+==========================================================================
+
+*/
+
+@media (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+
+  main {
+    padding: 0px 150px;
+  }
+
+  .line-projects {
+    left: 260px;
+  }
+
+  .draw {
+    svg {
+      width: 600px;
+      
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 0px 100px;
+  }
+
+  .line-projects {
+    top: -110px;
+    left: 300px;
+  }
+
+  .draw {
+    svg {
+      width: 500px;     
+    }
+  }
+
+  .footer {
+    .text {
+      padding: 60px;
+    }
+
+    .form {
+      padding: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 12px;
+  }
+
+  main {
+    padding: 0px 80px;
+  }
+
+  .line-projects {
+    left: 350px;
+  }
+
+  .draw {
+    top: 20vh;
+  
+    svg {
+      width: 400px;
+      
+    }
+  }
+
+  .footer {
+    .text {
+      padding: 40px;
+    }
+
+    .form {
+      padding: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+
+  main {
+    padding: 0px 40px;
+  }
+
+  .line-projects {
+    top: -80px;
+    left: 200px;
+    height: 450px;
+
+  }
+
+  .draw {
+    top: 20vh;
+  
+    svg {
+      width: 400px;
+      
+    }
+  }
+
+  .footer {
+    .text {
+      padding: 40px;
+    }
+
+    .form {
+      padding: 60px;
+    }
+  }
+
+  .presentation-container {
+    width: 80%;
+  }
+
+  .draw {
+    top: 30vh;
+  
+    svg {
+      width: 300px;  
+    }
+  }
+
+  .about {
+    .text {
+      width: 80%;
+    }
+  }
+
+  .navbar-responsive {
+    left: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 10px;
+  }
+
+  main {
+    padding: 0px 5px;
+  }
+
+  .line-projects {
+    top: -80px;
+    left: 90px;
+    height: 450px;
+
+  }
+
+  .draw {
+    top: 20vh;
+    left: 20vw;
+  
+    svg {
+      width: 200px;
+      
+    }
+  }
+
+  .footer {
+    .text {
+      display: none;
+    }
+
+    .form {
+      width: 100%;
+      padding: 20px;
+
+      .icons-in-form {
+        display: flex;
+      }
+    }
+  }
+
+  .presentation-container {
+    width: 80%;
+  }
+
+  .draw {
+    top: 30vh;
+  
+    svg {
+      width: 300px;  
+    }
+  }
+
+  .about {
+    .text {
+      width: 100%;
+    }
+  }
+
+  .navbar-responsive {
+    left: 30%;
   }
 }

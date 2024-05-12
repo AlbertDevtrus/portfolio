@@ -42,6 +42,17 @@ function Footer() {
                 <p>
                     Make your ideas come to life, contact me!
                 </p>
+                <div className="icons-in-form">
+                    <a href="https://www.linkedin.com/in/luis-guzman-bautista/" target="_blank" rel="noopener noreferer">
+                        <LinkedinIcon speed={0} color="white" />
+                    </a>
+                    <a href="https://github.com/TimmyElTaco" target="_blank" rel="noopener noreferer">
+                        <GithubIcon speed={0.0} color="white" />
+                    </a>
+                    <a href="https://twitter.com/TimmyElTaco" target="_blank" rel="noopener noreferer" >
+                        <TwitterIcon speed={0.0} color="white" />
+                    </a>
+                </div>
                 <form action={`mailto:albertpatrsu@gmail.com?subject=Contact portfolio from ${name}&body=${message}`} method="post">
                     <input className="form-inputs" type="text" name="name" id="name" placeholder="Name" required onChange={(e) => setName(e.target.value)} />
                     <textarea className="form-inputs" name="message" id="message" placeholder="Your message" onChange={(e) => setMessage(e.target.value)} required></textarea>

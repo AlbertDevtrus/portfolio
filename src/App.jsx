@@ -6,16 +6,25 @@ import { ArrowIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "./components/I
 import Draw from "./components/Draw";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import NavBarRes from "./components/NavBarRes";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 function App() {
 
   useSmoothScroll();
 
+  const home = useRef(null);
+  const contact = useRef(null);
+  const inView = useInView(home);
+  const inViewContact = useInView(contact, { margin: "0% 0% -80% 0%" })
+
   return (
     <>
       <main>
         <NavBar />
-        <section className="presentation-container">
+        <NavBarRes inView={inView} inView2={inViewContact} />
+        <section className="presentation-container" ref={home}>
           <div>
             <h1 className="title">
               Hello, I'm Luis.
@@ -45,7 +54,9 @@ function App() {
         <About />
         <Projects />
       </main>
-      <Footer />
+      <div ref={contact}>
+        <Footer />
+      </div>
     </>
   )
 }

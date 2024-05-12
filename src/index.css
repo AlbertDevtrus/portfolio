@@ -21,8 +21,10 @@ body {
   padding: 35px 35px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 
   a {
+    z-index: 10;
     transition: all 0.2s ease;
   }
 
@@ -355,7 +357,7 @@ canvas {
 .section-projects {
   height: 120vh;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .section-folders {
@@ -409,11 +411,69 @@ canvas {
   position: absolute;
   top: -120px;
   left: 250px;
-
 }
 
 .animate-path {
   stroke-dasharray: var(--LINE_PATH_LENGTH);
   stroke-dashoffset: var(--LINE_PATH_LENGTH);
   animation: dash 3000ms linear forwards;
+}
+
+.navbar-responsive {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 180px;
+  top: 3em;
+  left: 43%;
+
+  a {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 4px;
+  }
+  
+  .link.work {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 0;
+    border-radius: 5px 0px 0px 5px;
+    transform-origin: right;
+  }
+
+  .link.contact {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 0;
+    border-radius: 0px 5px 5px 0px;
+    transform-origin: left;
+  }
+
+  .link {
+    width: 40%;
+    font-size: 0.8em;
+    transition: background-color 0.2s ease;
+  }
+
+  .link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  #home-link {
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transform-origin: top;
+  }
+
+  svg line {
+    transition: all 0.2s ease;
+  }
+
+  svg:hover line {
+    stroke-width: 8;
+  }
+
+  svg:active line {
+    stroke-width: 0;
+  }
 }

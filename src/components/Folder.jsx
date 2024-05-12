@@ -65,8 +65,6 @@ const projects = {
     },
 }
 
-// My project represents a significant advancement in my career, where I combined my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe. It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage. Additionally, it includes user authentication. This project not only showcases my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs.
-
 export const Folder = ({name, isInView}) => {
     const controls = useDragControls();
     const [folder, animate] = useAnimate();

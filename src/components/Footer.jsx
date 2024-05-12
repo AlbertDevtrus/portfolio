@@ -18,7 +18,7 @@ function Footer() {
 
 
     return ( 
-        <motion.footer className="footer" id="contact" style={{ y }}>
+        <motion.footer className="footer" id="contact" style={{ y }} >
             <div className="text">
                 <h1>
                     /LET'S WORK TOGETHER

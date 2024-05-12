@@ -8,8 +8,6 @@ function Projects() {
 
     const isInView = useInView(folders, {margin: "-60% 0px 0px 0px", once: true});
 
-    console.log(isInView)
-
     return ( 
         <section
             className="section-projects"

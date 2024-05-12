@@ -567,7 +567,8 @@ Responsive
   }
 
   .line-projects {
-    left: 350px;
+    top: -40px;
+    left: 20%;
   }
 
   .draw {
@@ -597,13 +598,6 @@ Responsive
 
   main {
     padding: 0px 40px;
-  }
-
-  .line-projects {
-    top: -80px;
-    left: 200px;
-    height: 450px;
-
   }
 
   .draw {
@@ -658,10 +652,7 @@ Responsive
   }
 
   .line-projects {
-    top: -80px;
-    left: 90px;
-    height: 450px;
-
+    height: 400px;
   }
 
   .draw {

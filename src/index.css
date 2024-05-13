@@ -520,7 +520,6 @@ Responsive
   .draw {
     svg {
       width: 600px;
-      
     }
   }
 }
@@ -695,6 +694,10 @@ Responsive
   .about {
     .text {
       width: 100%;
+    }
+
+    .right {
+      display: none;
     }
   }
 

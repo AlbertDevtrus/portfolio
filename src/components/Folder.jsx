@@ -1,7 +1,7 @@
 import {motion, useDragControls} from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 
-import topFolder from '/public/TopFolder.svg'
+import topFolder from '/TopFolder.svg'
 import './Folder.css'
 import { ArrowIcon2 } from './Icons';
 
@@ -14,7 +14,7 @@ const projects = {
             'Tailwind',
             'API'
         ],
-        image: '/public/projects-img/spacex.jpeg',
+        image: '/projects-img/spacex.jpeg',
         description: [
             'This project is a recreation of the official SpaceX website using modern web development technologies, Tailwind CSS, and Astro.',
             'The main innovation lies in the use of Astro to dynamically generate pages based on data from an API, enabling a smooth and efficient user experience.'
@@ -33,7 +33,7 @@ const projects = {
             'ExpressJS',
             'OpenAI API'
         ],
-        image: '/public/projects-img/pomodoro.jpeg',
+        image: '/projects-img/pomodoro.jpeg',
         description: [
             "My portfolio project is a minimalist Pomodoro Timer, developed entirely with Vanilla JavaScript, HTML, and CSS.", 
             "It stands out for its integration with artificial intelligence through the OpenAI API, which provides personalized advice to help users achieve their goals during work sessions.",  
@@ -54,7 +54,7 @@ const projects = {
             'MongoDB',
             'Stripe'
         ],
-        image: '/public/projects-img/zhumell.jpeg',
+        image: '/projects-img/zhumell.jpeg',
         description: [
             "My project represents a significant advancement in my career, where I combined my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe.", 
             "It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage.", 

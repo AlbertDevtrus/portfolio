@@ -34,9 +34,6 @@ function Footer() {
                         <TwitterIcon speed={0.0} />
                     </a>
                 </div>
-                <a href="tel:8848438432">
-                    +52 884 843 8432
-                </a>
             </div>
             <div className="form">
                 <p>

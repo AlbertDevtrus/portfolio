@@ -4,6 +4,7 @@ import { useAnimate } from 'framer-motion';
 import topFolder from '/TopFolder.svg'
 import './Folder.css'
 import { ArrowIcon2 } from './Icons';
+import { useEffect } from 'react';
 
 const projects = {
     spaceXClone: {
@@ -69,9 +70,12 @@ export const Folder = ({name, isInView}) => {
     const controls = useDragControls();
     const [folder, animate] = useAnimate();
 
-    if(isInView) {
-        animate(folder.current, {y: [0, -30, 0]}, { duration: 0.6, delay: (projects[name].num * 0.2) })    
-    }
+    useEffect(() => {
+        if(isInView) {
+            animate(folder.current, {y: [0, -30, 0]}, { duration: 0.6, delay: (projects[name].num * 0.2) })
+        }
+    }, [isInView])
+
 
     const handleDrag = (_, info) => {
         if(info.offset.y > -100) {

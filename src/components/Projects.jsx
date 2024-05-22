@@ -1,12 +1,21 @@
 import { useRef } from "react";
 import { Folder } from "./Folder";
 import LineProjects from "./LineProjects";
-import { useInView } from "framer-motion";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function Projects() {
     const folders = useRef(null)
+    const [isInView, setIsInView] = useState(false);
 
-    const isInView = useInView(folders, {margin: "-60% 0px 0px 0px", once: true});
+    useEffect(() => {
+        const scrollListener = window.addEventListener('scrollEvent', () => {
+            setIsInView(true);
+        });
+
+        return window.removeEventListener('scrollEvent', scrollListener);
+    })
+
 
     return ( 
         <section
@@ -16,7 +25,7 @@ function Projects() {
             <div 
                 className="section-folders"
             >
-                <div className="container-folders" ref={folders}>
+                <div className="container-folders" data-scroll data-scroll-call="scrollEvent" ref={folders}>
                     <Folder name={'pomodoro'} isInView={isInView} />
                     <Folder name={'spaceXClone'} isInView={isInView} />
                     <Folder name={'zhumell'} isInView={isInView} />

@@ -110,7 +110,7 @@ export const Folder = ({name, isInView}) => {
                 <img
                     src={topFolder} 
                     className="logo react" 
-                    alt="React logo"
+                    alt="the top of a folder"
                 />
                 <span className='folder-num'>
                     00{projects[name].num}
@@ -122,7 +122,7 @@ export const Folder = ({name, isInView}) => {
             <div className='bottom-folder'>
                 <div className='presentation'>
                     <h1>{projects[name].name}</h1>
-                    <img src={projects[name].image} />
+                    <img src={projects[name].image} alt={`image of the project ${projects[name].name}`} />
                     <div className='technologies'>
                         {
                             projects[name].technologies.map((tech, i) => (
@@ -139,7 +139,12 @@ export const Folder = ({name, isInView}) => {
                             </p>
                         ))
                     }
-                    <a href={projects[name].url} target='_blank' rel='noopener noreferer'>
+                    <a 
+                        href={projects[name].url} 
+                        target='_blank' 
+                        rel='noopener noreferer'
+                        aria-label={`Check my ${projects[name].name} project`}
+                    >
                         Take a look <ArrowIcon2 color='black' /> 
                     </a>
                 </div>

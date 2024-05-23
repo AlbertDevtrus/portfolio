@@ -156,11 +156,12 @@ body {
     width: 60%;
 
     p {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 1em;
       text-wrap: pretty;
       display: flex;
       flex-wrap: wrap;
+      color: rgb(63, 63, 63);
 
       .word {
         margin-right: 9px;
@@ -471,7 +472,7 @@ canvas {
     background-color: rgb(235, 235, 235);
   }
 
-  #home-link {
+  .home-link {
     z-index: 1;
     border: 1px solid rgba(0, 0, 0, 0.2);
     transform-origin: top;
@@ -643,7 +644,7 @@ Responsive
 
 @media (max-width: 450px) {
   :root {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   main {
@@ -677,6 +678,11 @@ Responsive
         display: flex;
       }
     }
+  }
+
+  .description-project {
+    position: relative;
+    top: 3em;
   }
 
   .presentation-container {

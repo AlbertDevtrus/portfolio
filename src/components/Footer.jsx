@@ -24,13 +24,28 @@ function Footer() {
                     /LET'S WORK TOGETHER
                 </h1>
                 <div className="icons">
-                    <a href="https://www.linkedin.com/in/luis-guzman-bautista/" target="_blank" rel="noopener noreferer">
+                    <a 
+                        href="https://www.linkedin.com/in/luis-guzman-bautista/" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Contact me on linkedin"
+                    >
                         <LinkedinIcon speed={0} />
                     </a>
-                    <a href="https://github.com/TimmyElTaco" target="_blank" rel="noopener noreferer">
+                    <a 
+                        href="https://github.com/TimmyElTaco" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Check my github"
+                    >
                         <GithubIcon speed={0.0} />
                     </a>
-                    <a href="https://twitter.com/TimmyElTaco" target="_blank" rel="noopener noreferer" >
+                    <a 
+                        href="https://twitter.com/TimmyElTaco" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Contact me on twitter"
+                    >
                         <TwitterIcon speed={0.0} />
                     </a>
                 </div>
@@ -40,13 +55,28 @@ function Footer() {
                     Make your ideas come to life, contact me!
                 </p>
                 <div className="icons-in-form">
-                    <a href="https://www.linkedin.com/in/luis-guzman-bautista/" target="_blank" rel="noopener noreferer">
+                    <a 
+                        href="https://www.linkedin.com/in/luis-guzman-bautista/" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Contact me on linkedin"
+                    >
                         <LinkedinIcon speed={0} color="white" />
                     </a>
-                    <a href="https://github.com/TimmyElTaco" target="_blank" rel="noopener noreferer">
+                    <a 
+                        href="https://github.com/TimmyElTaco" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Check my github"
+                    >
                         <GithubIcon speed={0.0} color="white" />
                     </a>
-                    <a href="https://twitter.com/TimmyElTaco" target="_blank" rel="noopener noreferer" >
+                    <a 
+                        href="https://twitter.com/TimmyElTaco" 
+                        target="_blank" 
+                        rel="noopener noreferer"
+                        aria-label="Contact me on twitter"
+                    >
                         <TwitterIcon speed={0.0} color="white" />
                     </a>
                 </div>
@@ -58,7 +88,7 @@ function Footer() {
                         <ArrowIcon color={'white'} size="20" />
                     </button>
                 </form>
-                <a data-scroll-to href="main" data-scroll-to-duration={3}>
+                <a data-scroll-to href="main" data-scroll-to-duration={3} aria-label="Go to the home">
                     Back top
                     <ArrowIcon2 />
                 </a>

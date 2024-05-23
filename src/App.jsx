@@ -34,13 +34,28 @@ function App() {
             </span>
           </div>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/luis-guzman-bautista/" target="_blank" rel="noopener noreferer">
+            <a 
+              href="https://www.linkedin.com/in/luis-guzman-bautista/" 
+              target="_blank" 
+              rel="noopener noreferer"
+              aria-label="Contact me on linkedin"
+            >
               <LinkedinIcon speed={0.1} />
             </a>
-            <a href="https://github.com/TimmyElTaco" target="_blank" rel="noopener noreferer">
+            <a 
+              href="https://github.com/TimmyElTaco" 
+              target="_blank" 
+              rel="noopener noreferer"
+              aria-label="Check my github"
+            >
               <GithubIcon speed={0.04} />
             </a>
-            <a href="https://twitter.com/TimmyElTaco" target="_blank" rel="noopener noreferer" >
+            <a 
+              href="https://twitter.com/TimmyElTaco" 
+              target="_blank" 
+              rel="noopener noreferer"
+              aria-label="Contact me on twitter"
+            >
               <TwitterIcon speed={0.07} />
             </a>
           </div>

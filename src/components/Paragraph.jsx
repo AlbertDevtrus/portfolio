@@ -6,7 +6,7 @@ function Paragraph({ value, element }) {
 
     const { scrollYProgress } = useScroll({
         target: element,
-        offset: ['start start', '0.7 end']
+        offset: ['start -0.9', '0.7 end']
     })
 
     const words = value.split(' ');

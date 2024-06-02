@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --WHITE_BACKGROUND: #eeeded
+  --WHITE_BACKGROUND: #fefefe
 }
 
 main {
@@ -157,7 +157,7 @@ body {
     width: 60%;
 
     p {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 1em;
       text-wrap: pretty;
       display: flex;
@@ -167,6 +167,12 @@ body {
       .word {
         margin-right: 9px;
         margin-top: 0px;
+      }
+
+      .strongWord {
+        font-weight: 400;
+        color: black;
+        transition: all 0.2s ease;
       }
     }
   }

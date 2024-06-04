@@ -38,7 +38,13 @@ function About() {
                                 <Suspense fallback={null}>
                                     <Cube />
                                 </Suspense>
-                                <Environment preset='park' />
+                                <Environment 
+                                    files={[
+                                        'public/projects-img/museumplein_4k.webp',
+                                        'public/projects-img/museumplein_4k-gainmap.webp', 
+                                        'public/projects-img/museumplein_4k.json',
+                                    ]} 
+                                />
                             </Canvas>
                         :
                         <div>

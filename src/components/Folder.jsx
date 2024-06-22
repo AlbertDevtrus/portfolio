@@ -36,9 +36,8 @@ const projects = {
         ],
         image: '/projects-img/pomodoro.jpeg',
         description: [
-            "My portfolio project is a minimalist Pomodoro Timer, developed entirely with Vanilla JavaScript, HTML, and CSS.", 
-            "It stands out for its integration with artificial intelligence through the OpenAI API, which provides personalized advice to help users achieve their goals during work sessions.",  
-            "Additionally, it utilizes localStorage to keep track of users' progress, offering a simple yet effective solution for enhancing personal productivity."
+            "My portfolio project is a minimalist Pomodoro Timer developed with Vanilla JavaScript, HTML, and CSS. It integrates AI through the OpenAI API for personalized advice, helping users achieve their goals during work sessions.",  
+            "Additionally, it uses localStorage to track users' progress, offering a simple yet effective solution for enhancing personal productivity."
         ] 
         ,
         url: 'https://pomodoro-timer-minimalist.vercel.app/'
@@ -57,9 +56,8 @@ const projects = {
         ],
         image: '/projects-img/zhumell.jpeg',
         description: [
-            "My project represents a significant advancement in my career, where I combined my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe.", 
-            "It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage.", 
-            "Additionally, it includes user authentication. This project not only showcases my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs."
+            "My project represents a significant advancement in my career, combining my skills with cutting-edge technologies such as React, NodeJS, MongoDB, and Stripe. It stands out for its versatility, featuring an attractive landing page with Tailwind, a dynamic router, and a shopping cart with local storage.", 
+            "Additionally, it includes user authentication, showcasing not only my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs."
         ] 
         ,
         url: 'https://zhummellclone.vercel.app/'

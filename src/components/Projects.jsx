@@ -29,6 +29,7 @@ function Projects() {
                     <Folder name={'pomodoro'} isInView={isInView} />
                     <Folder name={'spaceXClone'} isInView={isInView} />
                     <Folder name={'zhumell'} isInView={isInView} />
+                    <Folder name={'cs50'} isInView={isInView} />
                     <div className="cover-folders">
                         <h1>Projects</h1>
                     </div>

@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 const projects = {
     spaceXClone: {
         name: 'SpaceX Clone',
-        num: 2,
+        num: 3,
         technologies: [
             'Astro', 
             'Tailwind',
@@ -44,7 +44,7 @@ const projects = {
     },
     zhumell: {
         name: 'E-commerce',
-        num: 3,
+        num: 4,
         technologies: [
             'React',
             'Tailwind', 
@@ -61,6 +61,29 @@ const projects = {
         ] 
         ,
         url: 'https://zhummellclone.vercel.app/'
+    },
+    cs50: {
+        name: 'CS50',
+        num: 2,
+        technologies: [
+            'Python',
+            'Flask', 
+            'SQLite',
+            'JavaScript',
+            'CSS',
+            'HTML',
+            'API'
+        ],
+        image: '/projects-img/cs50.png',
+        description: [
+            "This project is my final assignment for the CS50 Computer Science course by Harvard.", 
+            "It's a unique project because I used Python with Flask instead of JavaScript to create the web page, and SQLite for the database.",
+            "The course was very interesting as I learned a lot about computers and programming languages in general, which made it easier for me to learn new things about programming.",
+            "Test login:",
+            "Email: alberto@gmail.com Password: 12345"
+        ] 
+        ,
+        url: 'https://cs50-final-project-0okq.onrender.com/'
     },
 }
 

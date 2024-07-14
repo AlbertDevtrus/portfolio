@@ -60,7 +60,7 @@ const projects = {
             "Additionally, it includes user authentication, showcasing not only my technical expertise but also my ability to create comprehensive and effective solutions for real-world needs."
         ] 
         ,
-        url: 'https://zhummellclone.vercel.app/'
+        url: 'https://zhummell-no-official.vercel.app/'
     },
     cs50: {
         name: 'CS50',

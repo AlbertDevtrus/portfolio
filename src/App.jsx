@@ -46,7 +46,7 @@ function App() {
               <LinkedinIcon speed={0.1} />
             </a>
             <a
-              href="https://github.com/TimmyElTaco"
+              href="https://github.com/AlbertDevtrus"
               target="_blank"
               rel="noopener noreferer"
               aria-label="Check my github"

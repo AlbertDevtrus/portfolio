@@ -72,8 +72,6 @@ const projects = {
       "This project is my final assignment for the CS50 Computer Science course by Harvard.",
       "It's a unique project because I used Python with Flask instead of JavaScript to create the web page, and SQLite for the database.",
       "The course was very interesting as I learned a lot about computers and programming languages in general, which made it easier for me to learn new things about programming.",
-      "Test login:",
-      "Email: alberto@gmail.com Password: 12345",
     ],
     url: "",
   },
